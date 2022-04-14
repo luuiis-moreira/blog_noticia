@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #ddd;
+    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 117rem;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.title-section {
+    background: #f24d34;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: .2rem 1.5rem;
+    display: inline-block;
+}
+
+/* ========= HEADER ========= */
+header {
+    flex-direction: row;
+    padding: 1.5rem;
+}
+
+header div.logo {
+    flex-grow: 1;
+    text-align: left;
+}
+
+header div.banner {
+    flex-grow: 2;
+    text-align: right;
+}
+
+/* ========= HEADER ========= */
+
+/* ========= NAV ========= */
+nav.container {
+    padding: 1.5rem 1.5rem 0.2rem;
+}
+
+nav div {
+    width: 100%;
+    background: #151a1f;
+    border-bottom: 0.5rem solid #f24d34;
+}
+
+nav div ul {
+    flex-direction: row;
+    margin: 0;
+}
+
+nav div ul a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    padding: 1.5rem 3rem;
+    border-right: .1rem solid #333;
+    text-transform: uppercase;
+    transition: all 600ms ease-in-out;
+}
+
+nav div ul a:hover {
+    background-color: #f24d34;
+}
+
+ul a.activate {
+    background-color: #f24d34;
+
+}
+
+/* ========= NAV ========= */
+
+/* ========= SECTION BREAKNEWS-SEARCH ========= */
+section.container {
+    padding: 0.2rem 1.5rem .5rem;
+    border-bottom: .1rem solid #ccc;
+}
+
+section.search-breaknews .breaknews {
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 5;
+}
+
+section.search-breaknews .breaknews .breaknews-logo {
+    flex-grow: 1;
+}
+
+section.search-breaknews .breaknews .breaknews-description {
+    text-align: center;
+    flex-grow: 4;
+    font-size: 1.3rem;
+}
+
+div#carouselExampleControls div.carousel-inner div.carousel-item a{
+    text-decoration: none;
+    color: #151a1f;
+}
+
+div#carouselExampleControls div.carousel-inner div.carousel-item a:hover{
+    text-decoration: underline;
+}
+div#carouselExampleControls button span.carousel-control-prev-icon,
+div#carouselExampleControls button span.carousel-control-next-icon{
+    background-color: #151a1f;
+}
+section.search-breaknews .search {
+    flex-grow: 1;
+    justify-content: flex-end;  
+}
+
+section.search-breaknews .search div form {
+    height: 2.8rem;
+}
+
+section.search-breaknews .search div form input {
+    margin: 0 .6rem;
+    padding: 0 .6rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    transition: all 500ms ease-in-out;
+}
+
+section.search-breaknews .search div form input:focus,
+section.search-breaknews .search div form input:hover {
+    border: 1px solid #f24d34;
+    box-shadow: 0px 0px 15px black;
+}
+
+section.search-breaknews .search div form button {
+    border: none;
+    background: none;
+    transition: all 300ms ease-in-out;
+}
+section.search-breaknews .search div form button:hover{
+    transform: scale(1.2);
+}
+/* ========= SECTION BREAKNEWS-SEARCH ========= */
+
+/* ========= SECTION HIGHLIGHTS ========= */
+section.highlights {
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+section.highlights div.img,
+section.highlights div.content {
+    width: 50%;
+}
+
+section.highlights div.img {
+    position: relative;
+    overflow: hidden;
+}
+
+section.highlights div.img div.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+div.carousel-inner div.carousel-item div.carousel-caption h5 {
+    background: #f24d34;
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    opacity: 0.8;
+    display: inline-block;
+    margin: 0;
+}
+
+div.carousel-inner div.carousel-item div.carousel-caption p {
+    background: #151a1f;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+section.highlights div.img img {
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+section.highlights div.img img:hover {
+    transform: rotate(-2deg) scale(1.1);
+
+}
+
+section.highlights div.content {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+section.highlights div.item-content {
+    height: 11rem;
+    padding: .3rem;
+}
+
+section.highlights div.item-content:hover {
+    background: #eee;
+}
+
+section.highlights div.item-content div.item-content-description,
+section.highlights div.item-content div.item-content-img {
+    width: 50%;
+    overflow: hidden;
+}
+
+section.highlights div.item-content div.item-content-description a p.description {
+    text-transform: uppercase;
+    color: #f24d34;
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+
+section.highlights div.item-content div.item-content-description p.date {
+    color: #777;
+    font-size: 1.2rem;
+}
+
+div.item-content div.item-content-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: all 300ms ease-in-out;
+}
+div.item-content div.item-content-img img:hover{
+    transform: rotate(-2deg) scale(1.1);
+}
+/* ========= SECTION HIGHLIGHTS ========= */
+
