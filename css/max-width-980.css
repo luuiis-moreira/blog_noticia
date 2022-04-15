@@ -1,0 +1,80 @@
+header div.logo img,
+header div.banner img {
+    width: 100%;
+}
+
+nav div ul a {
+    font-size: 1.2rem;
+}
+
+section.highlights {
+    flex-direction: column;
+}
+
+section.highlights div.img,
+section.highlights div.content {
+    width: 100%;
+}
+
+section.highlights div.content {
+    padding: 0;
+}
+
+section.highlights div.content div.item-content {
+    padding: .5rem 0;
+}
+
+section.highlights div.item-content div.item-content-description{
+    width: 100%;
+}
+
+section.highlights div.item-content div.item-content-img {
+    display: inline-block;
+    text-align: right;
+}
+
+section.highlights div.item-content div.item-content-img a img{
+    width: 300px;
+}
+div.item-content div.item-content-img {
+    width: 100px;
+
+}
+
+div.carousel-inner div.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+div.item-content div.item-content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+section.highlights div.item-content div.item-content-description a p.description {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+div.carousel-inner div.carousel-item div.carousel-caption h5 {
+    font-size: 1.4rem;
+}
+div.carousel-inner div.carousel-item div.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+section.search-breaknews .search{
+    width: 150px;
+}
+
+section.search-breaknews .search div form input{
+    width: 100px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 20px;
+}
